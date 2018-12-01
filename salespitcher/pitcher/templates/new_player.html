@@ -1,0 +1,23 @@
+
+{% extends 'base.html' %}
+
+{% block title %}
+	<title>New Player</title>
+{% endblock %}
+
+{% block content %}
+
+	{% if error_message %}
+		<p><strong>{{ error_message }}</strong></p>
+	{% endif %}
+
+	<form>
+		Enter username:
+		<input type="text" name="player_name"><br>
+		Enter Room ID (optional):
+		<input type="text" name="room_id"><br><br>
+
+		<input type="submit" value="Go!" name="proceed">
+	</form>
+	
+{% endblock %}

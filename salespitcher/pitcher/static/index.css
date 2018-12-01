@@ -1,0 +1,27 @@
+body {
+    background-image: url("./img/background.jpg");
+    height: 100%;
+    width: 100%; 
+
+    /* Center and scale the image nicely */
+    
+    background-size: cover;
+}
+
+h1{
+   text-align:center;
+}
+
+h2{
+
+    text-align: center;
+}
+
+
+#willwork{
+   align: center;
+}
+
+#category{
+    text-align: center;
+}

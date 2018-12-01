@@ -1,6 +1,10 @@
 from django.db import models
 
 # Create your models here.
+
+class Player(models.Model):
+	username = models.CharField(max_length=32)
+
 class Subject(models.Model):
 	prompt_text = models.CharField(max_length = 64)
 	pub_date = models.DateTimeField('date published')
