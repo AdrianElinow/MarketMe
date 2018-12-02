@@ -4,3 +4,14 @@
 {% block title %}
 <title> PitchR Home </title>
 {% endblock %}
+
+{% block content %}
+
+Welcome to PitchR!
+<br>
+
+<a href="{% url 'new_player' %}">
+	<input type="button" value="Play!" name="">
+</a>
+
+{% endblock %}

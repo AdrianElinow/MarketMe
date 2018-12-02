@@ -7,16 +7,9 @@
 
 {% block content %}
 
-	{% if error_message %}
-		<p><strong>{{ error_message }}</strong></p>
-	{% endif %}
-
-	<form>
-		Enter username:
-		<input type="text" name="player_name"><br>
-		Enter Room ID (optional):
-		<input type="text" name="room_id"><br><br>
-
+	<form action="{% url 'new_player' curr_player_name %}" method="post">
+		{% csrf_token %}
+		{{ form }}
 		<input type="submit" value="Go!" name="proceed">
 	</form>
 	
